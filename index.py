@@ -80,7 +80,7 @@ def get_similarity(resume_text, job_desc):
 
 
 # Streamlit App
-st.title("📄 AI Resume Analyzer")
+st.title("AI Resume Analyzer")
 
 # Input job description
 job_description = st.text_area("Enter Job Description", height=200)
@@ -126,5 +126,5 @@ if uploaded_files and job_description:
     st.dataframe(df)
 
     # Show top candidate
-    st.success(f"🏆 **Best Match:** {df.iloc[0]['Candidate Name']} with {df.iloc[0]['Match Score (%)']}% match!")
+    st.success(f" **Best Match:** {df.iloc[0]['Candidate Name']} with {df.iloc[0]['Match Score (%)']}% match!")
 
